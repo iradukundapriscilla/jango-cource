@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workerout1</title>
+</head>
+<body>
+    
+
+    <div id="wrapper" class="wrapper">
+        <a href="home.html" title="logo"><img class ="logo" src="img/Sen_Order_Logo.svg" alt ="logoSenTransfer"></a>
+      <!-- Multi-step form -->
+      <form id="regForm" action ="history.html">
+        <h1>Recipient Information:</h1>
+        <h2> <em>* is the required field</em></h2>
+        <!-- One "tab" for each step in the form: -->
+      
+        <!-- Take name of recipent -->
+        <div class="tab">Name of the Recipient:
+          <p><label for="name">First Name<span class="req">*</span>
+            <input type = "text" id="fname" placeholder="First name" oninput="this.className = ''" name="fname"/></p>
+          <p><label for="name">Last Name<span class="req">*</span>
+            <input type = "text" id="lname" placeholder="Last name" oninput="this.className = ''" name="lname"/></p>
+        </div>
+      
+        <!-- Take recipent contact info -->
+        <div class="tab">Contact Info:
+          <p><label for="mail" >Email<span class="req">*</span>
+            <input type="email" id="mail" placeholder="E-mail" oninput="this.className = ''" name="email"/></p>
+        </div>
+      
+        
+      
+            <p>
+              <label for="date" >
+                <span>Expiration date:</span><span class="req">*</span>
+                <em>formatted as mm/yy</em>
+                <br>
+              </label>
+      
+            <span><label for="month"><span>Month:</span><span class="req">*</span></label>
+              <select id="month" name="month">
+                <option selected>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </span>
+      
+            <span><label for="year"><span>Year:</span><span class="req">*</span></label>
+              <select id="year" name="year">
+                <option selected>2022</option>
+                
+               
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+              </select>
+            </span>
+      
+            </p>
+      
+        </section>
+      
+      </div>
+      
+      
+      <!-- Create button to go next step or go back previous step -->
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+      </div>
+      
+      
+
+
+
+</body>
+</html>
+
+
+
+

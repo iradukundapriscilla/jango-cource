@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateReadUpdateDelete</title>
+</head>
+<body>
+
+    <form action="{% url 'crud'% }" method="POST">
+        {% csrf_token %}
+        <div>
+            <div class="tab">Form
+                <p><label for="name">First Name<span class="req">*</span>
+                  <input type = "text" id="Fname" placeholder="First name" oninput="this.className = ''" name="fname"/></p>
+                <p><label for="name">Last Name<span class="req">*</span>
+                  <input type = "text" id="Lname" placeholder="Last name" oninput="this.className = ''" name="lname"/></p>
+                <p><label for="name">Age<span class="req">*</span>
+                 <input type = "text" id="Age" placeholder="age" oninput="this.className = ''" name="age"/></p>
+                <p><label for="name">Phonenumber<span class="req">*</span>
+                 <input type = "text" id="Phonumber" placeholder="Phonumber" oninput="this.className = ''" name="phonumber"/></p>
+                </div>
+                &nbsp;&nbsp;<div> <input type="submit" value="save"></div>
+
+              </div>
+            
+    </form>
+    
+</body>
+</html>
